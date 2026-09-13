@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harga Paket — StudioDev</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f5ff',
+              100: '#e0ebfe',
+              500: '#2563eb',
+              600: '#1d4ed8',
+              800: '#1e293b',
+              900: '#0b1329',
+              dark: '#070d1e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-slate-800 bg-white antialiased">
+
+  <!-- NAVBAR -->
+  <header class="bg-brand-900 text-white">
+    <nav class="container mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="index.html" class="flex items-center space-x-3">
+        <div class="w-8 h-8 bg-brand-500 rounded-lg flex items-center justify-center font-bold text-lg">A</div>
+        <span class="text-xl font-bold tracking-tight">StudioDev.</span>
+      </a>
+      <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+        <a href="index.html" class="hover:text-white transition">Home</a>
+        <a href="about.html" class="hover:text-white transition">About</a>
+        <a href="services.html" class="hover:text-white transition">Services</a>
+        <a href="pricing.html" class="text-white font-semibold hover:text-brand-500 transition">Pricing</a>
+        <a href="projects.html" class="hover:text-white transition">Projects</a>
+      </div>
+      <a href="contact.html" class="hidden sm:inline-flex items-center space-x-2 text-sm font-semibold border border-slate-600 px-5 py-2.5 rounded-full hover:bg-white hover:text-brand-900 transition">
+        <i data-lucide="phone" class="w-4 h-4"></i>
+        <span>Hubungi Kami</span>
+      </a>
+    </nav>
+
+    <!-- Page Header Banner -->
+    <div class="container mx-auto px-6 py-16 text-center max-w-3xl">
+      <span class="text-xs uppercase tracking-widest font-bold text-brand-500">Investasi Transparan</span>
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mt-3 mb-6">Pilihan Paket Sesuai Skala Bisnis</h1>
+      <p class="text-slate-300 text-base md:text-lg leading-relaxed">
+        Tanpa biaya tersembunyi. Pilih paket yang paling cocok dengan target peluncuran website Anda saat ini.
+      </p>
+    </div>
+  </header>
+
+  <!-- PRICING CARDS -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
+        
+        <!-- Paket 1 -->
+        <div class="border border-slate-200 rounded-2xl p-8 flex flex-col justify-between hover:border-slate-300 transition">
+          <div>
+            <h3 class="text-xl font-bold text-slate-900">Landing Page</h3>
+            <p class="text-slate-500 text-xs mt-1">Fokus peluncuran satu penawaran spesifik.</p>
+            <div class="my-6">
+              <span class="text-3xl font-extrabold text-slate-900">Rp 2.500.000</span>
+              <span class="text-slate-400 text-xs block mt-1">Estimasi 3–5 hari kerja</span>
+            </div>
+            <ul class="space-y-3 text-sm text-slate-600 mb-8 border-t border-slate-100 pt-6">
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-brand-500 mr-2"></i> 1 Halaman Responsif Modern</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-brand-500 mr-2"></i> CTA WhatsApp / Form Otomatis</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-brand-500 mr-2"></i> Optimasi Kecepatan Loading</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-brand-500 mr-2"></i> Revisi Minor 2x</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="block w-full text-center py-3 px-4 rounded-xl border border-brand-500 text-brand-500 font-semibold hover:bg-brand-50 transition text-sm">Pilih Paket</a>
+        </div>
+
+        <!-- Paket 2 (Featured) -->
+        <div class="border-2 border-brand-500 rounded-2xl p-8 flex flex-col justify-between relative shadow-xl bg-white">
+          <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-500 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Paling Direkomendasikan</span>
+          <div>
+            <h3 class="text-xl font-bold text-slate-900">Company Profile</h3>
+            <p class="text-slate-500 text-xs mt-1">Profil bisnis komprehensif & kredibel.</p>
+            <div class="my-6">
+              <span class="text-3xl font-extrabold text-slate-900">Rp 5.500.000</span>
+              <span class="text-slate-400 text-xs block mt-1">Estimasi 7–14 hari kerja</span>
+            </div>
+            <ul class="space-y-3 text-sm text-slate-600 mb-8 border-t border-slate-100 pt-6">
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-brand-500 mr-2"></i> Hingga 5 Halaman Multi-page</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-brand-500 mr-2"></i> Desain UI/UX Eksklusif Brand</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-brand-500 mr-2"></i> Setup Domain & Server Hosting</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-brand-500 mr-2"></i> Struktur Ramah On-Page SEO</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-brand-500 mr-2"></i> Revisi Desain 3x</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="block w-full text-center py-3 px-4 rounded-xl bg-brand-500 text-white font-semibold hover:bg-brand-600 transition text-sm shadow-md shadow-brand-500/20">Pilih Paket</a>
+        </div>
+
+        <!-- Paket 3 -->
+        <div class="border border-slate-200 rounded-2xl p-8 flex flex-col justify-between hover:border-slate-300 transition">
+          <div>
+            <h3 class="text-xl font-bold text-slate-900">Custom Web App</h3>
+            <p class="text-slate-500 text-xs mt-1">Kebutuhan portal, dashboard, atau sistem terintegrasi.</p>
+            <div class="my-6">
+              <span class="text-3xl font-extrabold text-slate-900">Mulai 10 Jt</span>
+              <span class="text-slate-400 text-xs block mt-1">Disesuaikan kompleksitas fitur</span>
+            </div>
+            <ul class="space-y-3 text-sm text-slate-600 mb-8 border-t border-slate-100 pt-6">
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-brand-500 mr-2"></i> Fitur Dinamis & Database Kustom</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-brand-500 mr-2"></i> Integrasi RESTful API pihak ketiga</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-brand-500 mr-2"></i> Standar Keamanan & Enkripsi Data</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-brand-500 mr-2"></i> Termasuk Maintenance Bulanan</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="block w-full text-center py-3 px-4 rounded-xl border border-brand-500 text-brand-500 font-semibold hover:bg-brand-50 transition text-sm">Konsultasi Custom</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <div class="text-center mb-12">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">Pertanyaan yang Sering Diajukan (FAQ)</h2>
+      </div>
+      <div class="space-y-4 text-sm">
+        <div class="bg-white p-6 rounded-xl border border-slate-200">
+          <h4 class="font-bold text-slate-900 mb-2">Apakah harga sudah termasuk domain dan hosting?</h4>
+          <p class="text-slate-600 leading-relaxed">Untuk paket Company Profile dan Custom, kami bantu proses registrasi dan setup konfigurasi server/domain klien.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl border border-slate-200">
+          <h4 class="font-bold text-slate-900 mb-2">Bagaimana jika di masa depan kami ingin menambah blog atau artikel?</h4>
+          <p class="text-slate-600 leading-relaxed">Sistem custom ini dirancang modular. Blog dapat diintegrasikan kapan saja menggunakan CMS terpisah (misalnya WordPress) di subdomain tanpa merusak web utama.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-900 text-slate-300 py-10 border-t border-slate-800 text-center text-xs">
+    <div class="container mx-auto px-6">
+      <p>&copy; 2026 StudioDev. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>

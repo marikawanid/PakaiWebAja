@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Proyek — StudioDev</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f5ff',
+              100: '#e0ebfe',
+              500: '#2563eb',
+              600: '#1d4ed8',
+              800: '#1e293b',
+              900: '#0b1329',
+              dark: '#070d1e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-slate-800 bg-white antialiased">
+
+  <!-- NAVBAR -->
+  <header class="bg-brand-900 text-white">
+    <nav class="container mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="index.html" class="flex items-center space-x-3">
+        <div class="w-8 h-8 bg-brand-500 rounded-lg flex items-center justify-center font-bold text-lg">A</div>
+        <span class="text-xl font-bold tracking-tight">StudioDev.</span>
+      </a>
+      <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+        <a href="index.html" class="hover:text-white transition">Home</a>
+        <a href="about.html" class="hover:text-white transition">About</a>
+        <a href="services.html" class="hover:text-white transition">Services</a>
+        <a href="pricing.html" class="hover:text-white transition">Pricing</a>
+        <a href="projects.html" class="text-white font-semibold hover:text-brand-500 transition">Projects</a>
+      </div>
+      <a href="contact.html" class="hidden sm:inline-flex items-center space-x-2 text-sm font-semibold border border-slate-600 px-5 py-2.5 rounded-full hover:bg-white hover:text-brand-900 transition">
+        <i data-lucide="phone" class="w-4 h-4"></i>
+        <span>Hubungi Kami</span>
+      </a>
+    </nav>
+
+    <!-- Page Header Banner -->
+    <div class="container mx-auto px-6 py-16 text-center max-w-3xl">
+      <span class="text-xs uppercase tracking-widest font-bold text-brand-500">Galeri Karya</span>
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mt-3 mb-6">Koleksi Proyek yang Telah Diluncurkan</h1>
+      <p class="text-slate-300 text-base md:text-lg leading-relaxed">
+        Beberapa contoh hasil karya desain UI/UX dan implementasi website kustom untuk mitra klien kami.
+      </p>
+    </div>
+  </header>
+
+  <!-- PROJECTS GRID -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6 max-w-6xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Project 1 -->
+        <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:shadow-xl transition duration-300">
+          <div class="overflow-hidden h-52 bg-slate-100">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Corporate Website" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+          </div>
+          <div class="p-6">
+            <span class="text-xs font-semibold text-brand-500 uppercase tracking-wider">Company Profile</span>
+            <h3 class="text-lg font-bold text-slate-900 mt-1 mb-2">Apex Capital Indonesia</h3>
+            <p class="text-slate-500 text-xs leading-relaxed mb-4">Website profil perusahaan konsultan keuangan dengan arsitektur multi-page dan kecepatan optimal.</p>
+            <span class="text-xs font-medium text-slate-400">Tech: Tailwind • HTML5 • Netlify</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:shadow-xl transition duration-300">
+          <div class="overflow-hidden h-52 bg-slate-100">
+            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=600&q=80" alt="SaaS Landing Page" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+          </div>
+          <div class="p-6">
+            <span class="text-xs font-semibold text-brand-500 uppercase tracking-wider">Landing Page</span>
+            <h3 class="text-lg font-bold text-slate-900 mt-1 mb-2">SyncFlow Analytics</h3>
+            <p class="text-slate-500 text-xs leading-relaxed mb-4">Landing page fokus konversi produk SaaS software manajemen alur kerja tim digital.</p>
+            <span class="text-xs font-medium text-slate-400">Tech: Tailwind • JavaScript • Lucide</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:shadow-xl transition duration-300">
+          <div class="overflow-hidden h-52 bg-slate-100">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" alt="Agency Website" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+          </div>
+          <div class="p-6">
+            <span class="text-xs font-semibold text-brand-500 uppercase tracking-wider">Agency Portfolio</span>
+            <h3 class="text-lg font-bold text-slate-900 mt-1 mb-2">Vanguard Creative Media</h3>
+            <p class="text-slate-500 text-xs leading-relaxed mb-4">Website agensi konten video dengan showcase portofolio video embed berkinerja tinggi.</p>
+            <span class="text-xs font-medium text-slate-400">Tech: Custom Code • Vimeo API</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-900 text-slate-300 py-10 border-t border-slate-800 text-center text-xs">
+    <div class="container mx-auto px-6">
+      <p>&copy; 2026 StudioDev. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>

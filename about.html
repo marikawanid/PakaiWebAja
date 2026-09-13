@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tentang Kami — StudioDev</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f5ff',
+              100: '#e0ebfe',
+              500: '#2563eb',
+              600: '#1d4ed8',
+              800: '#1e293b',
+              900: '#0b1329',
+              dark: '#070d1e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-slate-800 bg-white antialiased">
+
+  <!-- NAVBAR -->
+  <header class="bg-brand-900 text-white">
+    <nav class="container mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="index.html" class="flex items-center space-x-3">
+        <div class="w-8 h-8 bg-brand-500 rounded-lg flex items-center justify-center font-bold text-lg">A</div>
+        <span class="text-xl font-bold tracking-tight">StudioDev.</span>
+      </a>
+      <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+        <a href="index.html" class="hover:text-white transition">Home</a>
+        <a href="about.html" class="text-white font-semibold hover:text-brand-500 transition">About</a>
+        <a href="services.html" class="hover:text-white transition">Services</a>
+        <a href="pricing.html" class="hover:text-white transition">Pricing</a>
+        <a href="projects.html" class="hover:text-white transition">Projects</a>
+      </div>
+      <a href="contact.html" class="hidden sm:inline-flex items-center space-x-2 text-sm font-semibold border border-slate-600 px-5 py-2.5 rounded-full hover:bg-white hover:text-brand-900 transition">
+        <i data-lucide="phone" class="w-4 h-4"></i>
+        <span>Hubungi Kami</span>
+      </a>
+    </nav>
+
+    <!-- Page Header Banner -->
+    <div class="container mx-auto px-6 py-16 text-center max-w-3xl">
+      <span class="text-xs uppercase tracking-widest font-bold text-brand-500">Mengenal Kami</span>
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mt-3 mb-6">Membangun Fondasi Digital yang Kokoh & Presisi</h1>
+      <p class="text-slate-300 text-base md:text-lg leading-relaxed">
+        Kami berfokus pada perpaduan rekayasa teknis kode bersih dan desain visual berdaya konversi tinggi untuk mitra bisnis di era digital.
+      </p>
+    </div>
+  </header>
+
+  <!-- STORY SECTION -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-xs uppercase tracking-wider font-bold text-brand-600">Filosofi Kami</span>
+          <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight mt-2 mb-6">Bukan Sekadar Tampilan, Melainkan Solusi yang Berfungsi</h2>
+          <p class="text-slate-600 text-sm md:text-base leading-relaxed mb-4">
+            Banyak website hanya mementingkan tampilan indah tanpa memikirkan kecepatan loading, kemudahan navigasi pengguna, dan struktur SEO yang tepat. Kami hadir untuk menyeimbangkan keduanya.
+          </p>
+          <p class="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
+            Dengan alur kerja terukur, setiap baris kode dan elemen visual disesuaikan dengan tujuan utama: mengubah pengunjung menjadi pelanggan setia bisnis Anda.
+          </p>
+          <div class="grid grid-cols-2 gap-6 pt-4 border-t border-slate-100">
+            <div>
+              <p class="text-3xl font-extrabold text-brand-500">50+</p>
+              <p class="text-xs text-slate-500 font-medium mt-1">Proyek Selesai Tepat Waktu</p>
+            </div>
+            <div>
+              <p class="text-3xl font-extrabold text-brand-500">99.8%</p>
+              <p class="text-xs text-slate-500 font-medium mt-1">Tingkat Kepuasan Klien</p>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-xl border border-slate-200">
+          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Workspace Team" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM SECTION -->
+  <section class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="container mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <p class="text-xs uppercase tracking-wider font-bold text-brand-600 mb-2">Tim Kami</p>
+        <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Keahlian di Balik Layar</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 text-center pb-6 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80" alt="UI/UX" class="w-full h-64 object-cover object-center mb-4" />
+          <h3 class="font-bold text-slate-900 text-lg">Sarah Amanda</h3>
+          <p class="text-xs text-brand-600 font-medium mb-3">UI/UX Designer</p>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 text-center pb-6 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" alt="Fullstack" class="w-full h-64 object-cover object-center mb-4" />
+          <h3 class="font-bold text-slate-900 text-lg">Dimas Pratama</h3>
+          <p class="text-xs text-brand-600 font-medium mb-3">Lead Web Developer</p>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 text-center pb-6 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80" alt="Project Manager" class="w-full h-64 object-cover object-center mb-4" />
+          <h3 class="font-bold text-slate-900 text-lg">Nadia Utami</h3>
+          <p class="text-xs text-brand-600 font-medium mb-3">Client Strategist</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-900 text-slate-300 py-10 border-t border-slate-800 text-center text-xs">
+    <div class="container mx-auto px-6">
+      <p>&copy; 2026 StudioDev. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>

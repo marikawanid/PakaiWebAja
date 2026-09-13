@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layanan Kami — StudioDev</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f5ff',
+              100: '#e0ebfe',
+              500: '#2563eb',
+              600: '#1d4ed8',
+              800: '#1e293b',
+              900: '#0b1329',
+              dark: '#070d1e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-slate-800 bg-white antialiased">
+
+  <!-- NAVBAR -->
+  <header class="bg-brand-900 text-white">
+    <nav class="container mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="index.html" class="flex items-center space-x-3">
+        <div class="w-8 h-8 bg-brand-500 rounded-lg flex items-center justify-center font-bold text-lg">A</div>
+        <span class="text-xl font-bold tracking-tight">StudioDev.</span>
+      </a>
+      <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+        <a href="index.html" class="hover:text-white transition">Home</a>
+        <a href="about.html" class="hover:text-white transition">About</a>
+        <a href="services.html" class="text-white font-semibold hover:text-brand-500 transition">Services</a>
+        <a href="pricing.html" class="hover:text-white transition">Pricing</a>
+        <a href="projects.html" class="hover:text-white transition">Projects</a>
+      </div>
+      <a href="contact.html" class="hidden sm:inline-flex items-center space-x-2 text-sm font-semibold border border-slate-600 px-5 py-2.5 rounded-full hover:bg-white hover:text-brand-900 transition">
+        <i data-lucide="phone" class="w-4 h-4"></i>
+        <span>Hubungi Kami</span>
+      </a>
+    </nav>
+
+    <!-- Page Header Banner -->
+    <div class="container mx-auto px-6 py-16 text-center max-w-3xl">
+      <span class="text-xs uppercase tracking-widest font-bold text-brand-500">Layanan & Spesialisasi</span>
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mt-3 mb-6">Membangun Solusi Digital Terukur</h1>
+      <p class="text-slate-300 text-base md:text-lg leading-relaxed">
+        Setiap produk dirancang khusus untuk memastikan performa tinggi, keamanan andal, dan pengalaman pengguna yang mulus.
+      </p>
+    </div>
+  </header>
+
+  <!-- SERVICES DETAIL -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6 max-w-6xl space-y-20">
+      
+      <!-- Layanan 1 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-blue-50 text-brand-500 flex items-center justify-center mb-6">
+            <i data-lucide="layout" class="w-6 h-6"></i>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Website Company Profile</h2>
+          <p class="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
+            Membangun reputasi korporat yang kokoh di mata klien, investor, dan mitra bisnis. Kami mengintegrasikan identitas visual brand Anda dengan susunan konten yang profesional.
+          </p>
+          <ul class="space-y-3 text-sm text-slate-700">
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-brand-500 mr-2"></i> Desain kustom berorientasi kredibilitas</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-brand-500 mr-2"></i> Halaman multi-page (Tentang, Portofolio, Tim, Kontak)</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-brand-500 mr-2"></i> Optimasi teknis dasar On-Page SEO</li>
+          </ul>
+        </div>
+        <div class="bg-slate-100 rounded-2xl p-4 border border-slate-200 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80" alt="Company Profile Preview" class="rounded-xl w-full object-cover" />
+        </div>
+      </div>
+
+      <!-- Layanan 2 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center md:flex-row-reverse">
+        <div class="md:order-2">
+          <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center mb-6">
+            <i data-lucide="rocket" class="w-6 h-6"></i>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">High-Converting Landing Page</h2>
+          <p class="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
+            Halaman tunggal yang dirancang khusus untuk kampanye pemasaran (Google Ads, Meta Ads) dan penawaran produk agar menghasilkan konversi atau lead maksimal.
+          </p>
+          <ul class="space-y-3 text-sm text-slate-700">
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-indigo-600 mr-2"></i> Susunan copywriting terstruktur (AIDA framework)</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-indigo-600 mr-2"></i> Integrasi langsung ke WhatsApp atau Form Leads</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-indigo-600 mr-2"></i> Loading super cepat di bawah 1.5 detik</li>
+          </ul>
+        </div>
+        <div class="md:order-1 bg-slate-100 rounded-2xl p-4 border border-slate-200 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=80" alt="Landing Page Preview" class="rounded-xl w-full object-cover" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROCESS / WORKFLOW -->
+  <section class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="container mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <p class="text-xs uppercase tracking-wider font-bold text-brand-600 mb-2">Workflow</p>
+        <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Tahapan Pengerjaan Proyek</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center">
+          <span class="text-2xl font-black text-brand-500 mb-2 block">01</span>
+          <h3 class="font-bold text-slate-900 mb-2">Brief & Riset</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">Pengumpulan data bisnis, target audiens, dan analisis kompetitor.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center">
+          <span class="text-2xl font-black text-brand-500 mb-2 block">02</span>
+          <h3 class="font-bold text-slate-900 mb-2">Wireframe & Desain</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">Penyusunan tata letak visual dan pengalaman pengguna (UI/UX).</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center">
+          <span class="text-2xl font-black text-brand-500 mb-2 block">03</span>
+          <h3 class="font-bold text-slate-900 mb-2">Development</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">Penulisan kode bersih, integrasi fitur, dan optimasi performa.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center">
+          <span class="text-2xl font-black text-brand-500 mb-2 block">04</span>
+          <h3 class="font-bold text-slate-900 mb-2">Uji Coba & Rilis</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">Quality control, testing di berbagai gadget, dan peluncuran resmi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-900 text-slate-300 py-10 border-t border-slate-800 text-center text-xs">
+    <div class="container mx-auto px-6">
+      <p>&copy; 2026 StudioDev. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>
